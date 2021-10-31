@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
+    "",
     "\\MvcMovie",
     "\\MvcMovie\\Models"
   ],
+  "SelectedNode": "\\MvcMovie\\Models\\MvcMovieSeedData.cs",
   "PreviewInSolutionExplorer": false
 }

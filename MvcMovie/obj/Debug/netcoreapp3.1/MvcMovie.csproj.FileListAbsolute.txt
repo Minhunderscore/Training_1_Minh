@@ -163,8 +163,6 @@ D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\scopedcss\bundle\MvcM
 D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.TagHelpers.input.cache
 D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.TagHelpers.output.cache
 D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.RazorCoreGenerate.cache
-D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\HelloWorld\Index.cshtml.g.cs
-D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\HelloWorld\Welcome.cshtml.g.cs
 D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\GitHub\Training_1_Minh\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
