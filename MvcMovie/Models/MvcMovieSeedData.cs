@@ -15,48 +15,39 @@ namespace MvcMovie.Models
                     DbContextOptions<MvcMovieContext>>()))
             {
                 // Look for any movies.
-                if (context.Movie.Any())
-                {
-                    return;   // DB has been seeded
+                // if (context.Movie.Any())
+                // {
+                //     return;   // DB has been seeded
+                // }
+                
+                string[] titles= new string[]{};
+                for (int i=0; i<=500; i++){
+                    titles.Append(new string("Film #"+(char)i));
+                };
+                
+                string[] genres= new string[]{
+                    "Romantic Comedy", "Comedy", "Western", "Horror", "Eastern", "Adult"
+                };
+
+                Random gen = new Random();
+                DateTime RandomDay(){
+                    DateTime start = new DateTime(1995, 1, 1);
+                    int range = (DateTime.Today - start).Days;           
+                    return start.AddDays(gen.Next(range));
+                };
+
+                for (int i=0; i<=500; i++){
+                    context.Movie.AddRange(
+                        new Movie
+                        {
+                        Title = titles[i],
+                        // ReleaseDate = RandomDay(),
+                        // Genre = genres[i%6],
+                        // Price = i,
+                        // Rating = (char)i
+                        }
+                    );
                 }
-
-                context.Movie.AddRange(
-                    new Movie
-                    {
-                        Title = "When Harry Met Sally",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Genre = "Romantic Comedy",
-                        Price = 7.99M,
-                        Rating = "."
-                    },
-
-                    new Movie
-                    {
-                        Title = "Ghostbusters ",
-                        ReleaseDate = DateTime.Parse("1984-3-13"),
-                        Genre = "Comedy",
-                        Price = 8.99M,
-                        Rating = "!"
-                    },
-
-                    new Movie
-                    {
-                        Title = "Ghostbusters 2",
-                        ReleaseDate = DateTime.Parse("1986-2-23"),
-                        Genre = "Comedy",
-                        Price = 9.99M,
-                        Rating = "?"
-                    },
-
-                    new Movie
-                    {
-                        Title = "Rio Bravo",
-                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
-                        Price = 3.99M,
-                        Rating = "#"
-                    }
-                );
                 context.SaveChanges();
             }
         }
